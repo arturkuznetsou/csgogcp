@@ -11,7 +11,7 @@ RUN apt-get -qq update \
 	&& wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz \
 	&& tar xf /root/Steam/steamcmd_linux.tar.gz \
 	&& rm steamcmd_linux.tar.gz \
-	&& bash /root/Steam/steamcmd.sh
+	&& echo "quit" | bash /root/Steam/steamcmd.sh
 
 # Expose ports
 EXPOSE 27015/tcp 27015/udp 27020/udp
